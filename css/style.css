@@ -251,7 +251,7 @@ nav ul li a:hover {
 .about-container {
   display: flex;
   height: fit-content;
-  padding: 1rem;
+  padding: 01rem;
   margin-top: 4rem;
 }
 
@@ -282,6 +282,7 @@ nav ul li a:hover {
 
 .about-container .info-container .btn-small {
   max-width: 10rem;
+  margin-top: 3rem;
 }
 
 /** Frontpage Timetree **/
