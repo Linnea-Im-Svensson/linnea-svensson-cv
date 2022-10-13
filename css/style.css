@@ -1527,6 +1527,11 @@ button {
     color: var(--dark-mode-light-color);
   }
 
+  /** Modal popup text **/
+  .modal-info {
+    background: var(--dark-mode-color);
+  }
+
   /** black line **/
   .list-container ul li {
     background: var(--light-bg-color);
