@@ -810,8 +810,8 @@ footer .copyright {
 }
 
 .cv-download {
-  display: flex;
-  justify-content: center;
+  display: block;
+  margin: auto;
 }
 
 .skill-boxes {
