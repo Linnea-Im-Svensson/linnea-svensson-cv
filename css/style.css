@@ -1263,6 +1263,10 @@ button {
     justify-content: center;
   }
 
+  .hobbies-container {
+    justify-content: center;
+  }
+
   /** Footer **/
   footer {
     height: 35vh;
