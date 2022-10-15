@@ -582,7 +582,8 @@ footer .footer-contact {
   grid-area: contact;
   display: flex;
   flex-direction: column;
-  margin-left: 5rem;
+  align-items: center;
+  /* margin-left: 5rem; */
 }
 
 footer .footer-contact a {
@@ -1128,11 +1129,19 @@ button {
 @media (max-width: 620px) {
   .head-text h1 {font-size: 2.5em;}
   .head-text h3 {font-size: 1.5em;}
+  
 
   /** Header **/
   .grid-container {
     grid-template-columns: 1fr 2fr 1fr;
-    gap: 1rem;
+  }
+
+  .btn-container .btn-small {
+    margin-bottom: 1rem;
+  }
+
+  .head-text h3 {
+    margin-bottom: 0;
   }
 
   /** Navbar **/
@@ -1170,6 +1179,11 @@ button {
 
   nav ul {
     margin: auto;
+    font-size: 1rem;
+  }
+
+  nav ul li {
+    padding: 0.5rem 0.5rem;
   }
 
   /** frontpage about  **/
@@ -1191,7 +1205,7 @@ button {
   /** cv & timetree **/
   /** timetree **/
   .frontpage-timetree-container {
-    height: 115vh;
+    height: fit-content;
   }
 
   .list-container ul li {
@@ -1199,23 +1213,32 @@ button {
     transform: translateX(-15rem);
     height: 10rem;
   }
+  
+  .list-container ul li {
+    background: #000;
+    transform: translateX(-10.5rem);
+    height: 10rem;
+  }
 
   .list-container ul li div {
-    width: 25rem;
-    height: 8rem;
+    width: 20rem;
+    height: 9rem;
   }
 
-  .div-left {
-    transform: translate(3rem, -3.5rem);
+  .list-container ul li::after {
+    transform: translate(-0.7rem, -5.5rem);
+    border-radius: 10px;
+    width: 3rem;
+  }
+
+  .div-left,
+  .div-right {
+    transform: translateX(1rem);
   }
   
-  .div-left::after {
-    transform: translate(-1.6rem, 1.05rem);
-    border-radius: 100% 0 0 0;
-  }
-
+  .div-left::after,
   .div-right::after {
-    transform: translate(-1.6rem, 1.05rem);
+    display: none;
   }
 
   .list-container a {
@@ -1262,12 +1285,24 @@ button {
 
   /** Footer **/
   footer {
-    height: 35vh;
-    
+    height: fit-content;
+    grid-template-areas:
+    'info'
+    'contact'
+    'icons'
+    'copyright';
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    overflow: hidden;
   }
 
-  footer .contact a {
-    margin-top: 4rem;
+  footer .info {
+    text-align: center;
+  }
+
+  footer .footer-contact {
+    margin-bottom: 0.5rem;
   }
 
   footer .copyright {
@@ -1280,11 +1315,11 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: fit-content;
+    margin-bottom: 1rem;
     width: 100%;
     border-radius: 20px;
     position: none;
-    margin-bottom: 1rem;
   }
 
   .project-img-container-1 {
@@ -1314,6 +1349,10 @@ button {
   }
 
   /** About **/
+  .about {
+    margin-top: 4rem;
+  }
+
   .contact-container {
     flex-direction: column;
     height: fit-content;
@@ -1350,16 +1389,25 @@ button {
     text-align: center;
   }
   
+  /** CV **/
+  .cv {
+    margin-top: 4rem;
+  }
+
   /** Portfolio **/
+  .portfolio {
+    margin-top: 5rem;
+  }
+
   .portfolio-grid-container {
     grid-template-columns: 1fr;
   }
 
-  .portfolio {
+  /** Contact **/
+  .contact {
     margin-top: 4rem;
   }
 
-  /** Contact **/
   .contact-info-container {
     justify-content: space-evenly;
   }
