@@ -331,7 +331,7 @@ nav ul li a:hover {
 
 /** timetree boxes **/
 .list-container ul li div {
-  width: 15rem;
+  width: 17rem;
   height: 10rem;
   background: var(--light-bg-color);
   border-radius: 10px;
@@ -360,14 +360,14 @@ nav ul li a:hover {
 
 .div-left {
   position: relative;
-  transform: translate(-17.5rem, -3.5rem);
+  transform: translate(-20rem, -3.5rem);
 }
 
 .div-left::after {
   content: '';
   position: absolute;
   background: var(--light-bg-color);
-  transform: translate(13.5rem, 0.35rem);
+  transform: translate(15.5rem, 0.35rem);
   border-radius: 0 100% 0 0;
   height: 1rem;
   width: 1rem;
@@ -893,6 +893,11 @@ footer .copyright {
   width: 100%;
   margin: 0 1rem;
   transition: all 0.5s;
+  max-height: 30vh;
+}
+
+.preview-img-container .img-box img {
+  max-height: 30vh;
 }
 
 .preview-img-container .img-box:hover {
@@ -934,11 +939,13 @@ footer .copyright {
   border-radius: 20px;
   position: none;
   margin-bottom: 1rem;
+  max-height: 40vh;
 }
 
 .img-box img {
   border-radius: 20px;
   width: 100%;
+  max-height: 40vh;
 }
 
 .portfolio .img-box a {
