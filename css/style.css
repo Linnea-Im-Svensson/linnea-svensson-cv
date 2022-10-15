@@ -922,7 +922,7 @@ footer .copyright {
   text-align: center;
   gap: 1rem;
   padding: 1rem;
-  margin: 2rem 0;
+  margin: 2rem 0 0 0;
 }
 
 /** Ny img-box test **/
@@ -939,7 +939,6 @@ footer .copyright {
 .img-box img {
   border-radius: 20px;
   width: 100%;
-  max-height: 50vh;
 }
 
 .portfolio .img-box a {
@@ -1408,15 +1407,14 @@ button {
 
   .portfolio-grid-container {
     grid-template-columns: 1fr;
-    background: none;
   }
 
   .img-box {
-    max-height: 50vh;
+    max-height: 40vh;
   }
 
   .img-box img {
-    max-height: 50vh;
+    max-height: 40vh;
   }
 
   /** Contact **/
