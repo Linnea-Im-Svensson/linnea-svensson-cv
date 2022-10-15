@@ -925,11 +925,6 @@ footer .copyright {
   margin: 2rem 0;
 }
 
-.portfolio-grid-container div {
-  overflow: hidden;
-  height: fit-content;
-}
-
 /** Ny img-box test **/
 .img-box {
   display: flex;
@@ -944,7 +939,7 @@ footer .copyright {
 .img-box img {
   border-radius: 20px;
   width: 100%;
-  height: auto;
+  max-height: 50vh;
 }
 
 .portfolio .img-box a {
@@ -1413,6 +1408,15 @@ button {
 
   .portfolio-grid-container {
     grid-template-columns: 1fr;
+    background: none;
+  }
+
+  .img-box {
+    max-height: 50vh;
+  }
+
+  .img-box img {
+    max-height: 50vh;
   }
 
   /** Contact **/
