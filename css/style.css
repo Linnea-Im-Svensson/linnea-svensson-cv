@@ -944,6 +944,8 @@ footer .copyright {
 
 .img-box img {
   border-radius: 20px;
+  width: 100%;
+  height: auto;
 }
 
 .portfolio .img-box a {
@@ -1471,20 +1473,6 @@ button {
 
   .portfolio-grid-container {
     height: fit-content;
-  }
-
-  .portfolio-grid-container .img-box a img {
-    width: 100%;
-    height: auto;
-  }
-
-  .portfolio .img-box {
-    width: fit-content;
-    height: 19rem;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   /** Footer **/
