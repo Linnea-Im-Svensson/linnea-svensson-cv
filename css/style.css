@@ -219,18 +219,15 @@ nav ul li a:hover {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  margin-top: 0.8rem;
 }
 
 .head-text h1 {
   margin-bottom: 0.5rem;
 }
 
-.head-text h3 {
-  margin-bottom: 1rem;
-}
-
 .btn-container {
-  margin-top: 2.5rem;
+  margin-top: 1rem;
 }
 
 .btn-container a {
@@ -352,7 +349,7 @@ nav ul li a:hover {
   content: '';
   position: absolute;
   background: var(--light-bg-color);
-  transform: translate(-1.5rem, 1.9rem);
+  transform: translate(-1.5rem, 1.85rem);
   border-radius: 100% 0 0 0;
   height: 1rem;
   width: 1rem;
@@ -367,7 +364,7 @@ nav ul li a:hover {
   content: '';
   position: absolute;
   background: var(--light-bg-color);
-  transform: translate(15.5rem, 0.35rem);
+  transform: translate(15.5rem, 0.30rem);
   border-radius: 0 100% 0 0;
   height: 1rem;
   width: 1rem;
